@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Testing JavaScript</title>
 </head>
 <body>
-
+<h1>Alkuluku</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+    let luku;
+    let alkuluku = true;
+    luku = +prompt("Anna luku: ")
+    if (luku > 1) {
+      for (let i = 2; i < luku; i++) {
+        if (luku % i == 0) {
+          alkuluku = false;
+          break;
+        }
+      }
+      if (alkuluku) {
+        document.write('Antamasi luku on alkuluku.');
+      } else {
+        document.write('Antamasi luku ei ole alkuluku.');
+      }
+    }
+</script>
 </body>
 </html>
