@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1>Laskenta</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+    let numero1, numero2, numero3;
+    let summa, tulos, keskiarvo;
+    numero1 = +prompt("Anna ensimmäinen numero: ")
+    numero2 = +prompt("Anna toinen numero: ")
+    numero3 = +prompt("Anna kolmas numero: ")
+    summa = numero1 + numero2 + numero3
+    tulos = numero1 * numero2 * numero3
+    keskiarvo = (numero3 + numero2 + numero1)/3
+    document.write(`Lukujen summa on ${summa}, lukujen tulos on ${tulos} ja lukujen keskiarvo on ${keskiarvo}. <br>`)
+</script>
+</body>
+</html>

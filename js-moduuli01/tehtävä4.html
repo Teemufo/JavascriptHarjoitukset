@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1>Hattuarvonta</h1>
+<p id="target"></p>
+<script>
+    'use strict';
+    let nimi;
+    nimi = prompt("Anna nimesi: ")
+    let arvonta;
+    arvonta = Math.floor(Math.random()*4)+1;
+      if (arvonta == 1) {
+            arvonta = 'Hufflepuff';
+        }
+        else if (arvonta == 2) {
+            arvonta = 'Gryffindor';
+        }
+        else if (arvonta == 3) {
+            arvonta = 'Ravenclaw';
+        }
+        else if (arvonta == 4) {
+            arvonta = 'Slytherin';
+        }
+
+    document.write(`${nimi} you are ${arvonta}. <br>`)
+</script>
+</body>
+</html>
